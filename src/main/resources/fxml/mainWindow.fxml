@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecorp.application.controller.MainController">
+    <AnchorPane fx:id="pane" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0">
+        <children>
+            <ImageView fx:id="fon" fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" x="250.0" y="50.0">
+               <image>
+                  <Image url="@/images/fon.png" />
+               </image>
+            </ImageView>
+            <ImageView id="bed" fx:id="bed" disable="true" fitHeight="100.0" fitWidth="50.0" onMousePressed="#mousePressed" pickOnBounds="true" preserveRatio="true" x="30.0" y="10.0">
+                <image>
+                    <Image url="@/images/bed.png" />
+                </image>
+            <rotationAxis>
+               <Point3D x="1.0" y="1.0" z="1.0" />
+            </rotationAxis>
+            </ImageView>
+            <ImageView id="cupboard" fx:id="cupboard" disable="true" fitHeight="100.0" fitWidth="50.0" layoutX="28.0" layoutY="109.0" onMousePressed="#mousePressed" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@/images/cupboard.png" />
+                </image>
+            </ImageView>
+            <ImageView id="chest" fx:id="chest" disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="27.0" layoutY="176.0" onMousePressed="#mousePressed" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@/images/chest.png" />
+                </image>
+            </ImageView>
+            <Button fx:id="ok" layoutX="347.0" layoutY="234.0" mnemonicParsing="false" onAction="#createField" text="Ок" />
+            <TextField fx:id="height" layoutX="299.0" layoutY="137.0" prefHeight="27.0" prefWidth="130.0" />
+            <TextField fx:id="width" layoutX="299.0" layoutY="195.0" prefHeight="27.0" prefWidth="130.0" />
+            <Label fx:id="label1" layoutX="343.0" layoutY="120.0" text="Высота" />
+            <Label fx:id="label2" layoutX="340.0" layoutY="179.0" text="Ширина" />
+         <Line endX="100.0" endY="306.0" layoutX="80.0" layoutY="92.0" startX="100.0" startY="-92.0" />
+         <Button layoutX="331.0" layoutY="350.0" mnemonicParsing="false" onAction="#rotateFurniture" text="&lt;-" />
+         <Button layoutX="366.0" layoutY="350.0" mnemonicParsing="false" onAction="#rotateFurniture" text="-&gt;" />
+         <Button fx:id="delete" layoutX="429.0" layoutY="350.0" mnemonicParsing="false" text="Удалить" visible="false" />
+         <Button fx:id="addFurniture" visible="false" onAction="#addFurniture" layoutX="21.0" layoutY="350.0" mnemonicParsing="false" text="Добавить мебель" />
+         </children></AnchorPane>
+  </SplitPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecorp.application.controller.InputSizeController">
+   <children>
+      <Button onAction="#getSizes" layoutX="82.0" layoutY="159.0" mnemonicParsing="false" text="ОК" />
+      <Label layoutX="54.0" layoutY="14.0" text="Введите высоту" />
+      <TextField fx:id="height" layoutX="20.0" layoutY="31.0" />
+      <Label layoutX="52.0" layoutY="67.0" text="Введите ширину" />
+      <TextField fx:id="width" layoutX="20.0" layoutY="87.0" />
+   </children>
+</AnchorPane>
