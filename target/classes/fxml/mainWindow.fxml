@@ -41,6 +41,7 @@
          <Button layoutX="331.0" layoutY="350.0" mnemonicParsing="false" onAction="#rotateFurniture" text="&lt;-" />
          <Button layoutX="366.0" layoutY="350.0" mnemonicParsing="false" onAction="#rotateFurniture" text="-&gt;" />
          <Button fx:id="delete" layoutX="429.0" layoutY="350.0" mnemonicParsing="false" text="Удалить" visible="false" />
-         <Button fx:id="addFurniture" visible="false" onAction="#addFurniture" layoutX="21.0" layoutY="350.0" mnemonicParsing="false" text="Добавить мебель" />
+         <Button fx:id="addFurniture" layoutX="21.0" layoutY="350.0" mnemonicParsing="false" onAction="#addFurniture" text="Добавить мебель" visible="false" />
+         <Button layoutX="429.0" layoutY="350.0" mnemonicParsing="false" text="Сохранить" />
          </children></AnchorPane>
   </SplitPane>
